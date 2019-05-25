@@ -1,0 +1,8 @@
+## Interface: 11302
+## Title: DayZero
+## Notes: Settings for New Character WoW Classic
+## Author: Isharya
+## Version: 1.0.0
+##SavedVariablesPerCharacter: DZData
+
+DayZero.lua

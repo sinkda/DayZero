@@ -14,11 +14,11 @@ end
 -- Helper Functions
 local function SetNameplateDistance(val)
     if not tonumber(val) then
-        return print("Error setting nameplate distance -- non number provided.");
+        return print("[DayZero] Error setting nameplate distance -- non number provided.");
     end
 
     DZData.NameplateDistance = val;
-    print("Nameplate Distance set to: ".. val);
+    print("[DayZero] Nameplate Distance set to: ".. val);
     SetCVar("nameplateMaxDistance", DZData.NameplateDistance);
 end
 
@@ -28,10 +28,10 @@ local function SetNameplateClassColor(val)
     end
 
     if(val == 1) or val == "1" then
-        print("|cFF0066FFClass Color Enabled");
+        print("[DayZero] |cFF0066FFClass Color Enabled");
         DZData.NameplateColor = 1;
     else    
-        print("Class Color Disabled");
+        print("[DayZero] Class Color Disabled");
         DZData.NameplateColor = 0;
     end
     
@@ -107,8 +107,6 @@ dz:SetScript("OnEvent", function(self, event)
     -- Some non-configurable C-Vars that are easy to change in game
     SetCVar("nameplateShowEnemies", 1); -- show enemy nameplates by default
     SetCVar("instantQuestText", 1); -- set instant quest text
-    
-
 
     self:UnregisterEvent("PLAYER_LOGIN");
 end);

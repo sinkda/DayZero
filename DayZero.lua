@@ -34,6 +34,8 @@ local function SetNameplateClassColor(val)
         print("[DayZero] Class Color Disabled");
         DZData.NameplateColor = 0;
     end
+
+    print("[DayZero] You may need /reload your UI to see these changes.");
     
     SetCVar("ShowClassColorInFriendlyNameplate", DZData.NameplateColor);
     SetCVar("ShowClassColorInNameplate", DZData.NameplateColor);

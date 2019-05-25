@@ -106,6 +106,7 @@ dz:SetScript("OnEvent", function(self, event)
 
     -- Some non-configurable C-Vars that are easy to change in game
     SetCVar("nameplateShowEnemies", 1); -- show enemy nameplates by default
+    SetCVar("instantQuestText", 1); -- set instant quest text
     
 
 
